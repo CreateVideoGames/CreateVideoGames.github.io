@@ -1,0 +1,270 @@
+body{
+    width: 100vw;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    background: #3b3232;
+    color: #e2e3eb;
+    text-align: center;
+    position: relative;
+}
+main{
+    width: 80vw;
+    padding: 1vh 2vw;
+    margin:0px 7vw;
+    background: hsla(0, 2%, 8%, 0.21);
+    border-right: 4px solid #e6e5e4;
+    border-left: 4px solid #e6e5e4;
+    border-radius: 5px;
+}
+.part{
+    background: hsla(205, 50%, 31%, 0.97);
+    padding: 2vh 2vw;
+    border-radius: 5px;
+    margin: 1vh 0 0;
+}
+
+ul{
+    line-height: 1.5rem;
+    border-left: 6px solid #f47b03;
+}
+li{text-align: left}
+.top_nav ul li a{color: white; font-size:0.5rem;text-decoration: none; text-align: center}
+.top_nav ul{border-left:none; width: 100vw }
+.top_nav ul li{
+    width: 16vw;
+    display: inline-block;
+    margin: 0 1vw 0 0;
+}
+svg{display: block;}
+button{
+    display: inline-block;
+    margin:  0 5vw 0 -4vw ;
+    left: 0vw;
+    background:rgba(0, 0, 0, 0.79);
+    border: none;
+}
+button:active{background:#fdb511}
+.top_nav{
+    padding: 0px;
+    top:0px;
+    left:0px;
+    position:fixed;
+    z-index: 10;
+    height:auto;
+    width: 100vw;
+    background: rgb(0, 0, 0);
+    border-right:none;
+    transition: none;
+    
+}
+nav{
+    z-index: 9;
+    text-align: left;
+    width: 70vw;
+    position: fixed;
+    top: 14vh;
+    left: -72vw;
+    background: rgba(0, 0, 0, 0.91);
+    color: #fafafa;
+    height: 100vh;
+    transition: 1s;
+    border-right: 6px solid #fdb511;
+}
+nav ul{border-left:none}
+#menu ul li {margin: 0 0 2vh 0}
+#menu .big{ color: #d4d3d0; font-weight:800; text-decoration: underline}
+#menu .average{ color: orange; font-size:0.7rem; margin:0 0 0 6vw }
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.05rem;
+}
+nav ul li a:active{background:#fdb511}
+.vis{ left: -5vw}
+h1{margin: 11vh 0 0;}
+h2::after{
+        content: "";           
+        display: block;           
+        height: 5px;       
+        width: 50%;         
+        background-color: green;  
+        margin: auto;   
+        transition:2s;       
+    }   
+h2::before{
+        content: "";           
+        display: block;           
+        height: 5px;       
+        width: 50%;         
+        background-color: green;  
+        margin: auto;   
+        transition:2s;       
+    } 
+h2:hover::after{width: 80%}
+h2:hover::before{width: 80%}
+h3{
+    margin: 3vh 0 0 0;
+    padding: 5%;
+    background: #c75400;
+    border-radius: 8px;
+}
+h4{
+    background: #448019;
+    padding: 2%;
+    border-radius: 2px;
+}
+.picture{
+    border: 1.3vw solid black;
+    border-radius: 5px;
+    border-bottom: none;
+    position: relative;
+    width:75vw;
+    margin: 1.5vh -0.8vw
+}
+.picture img{
+    width: 100%; 
+}
+.picture a{
+    color: black;
+    font-weight:bold;
+    position: absolute;
+    text-decoration: none;
+    font-size: 1.2rem;
+    left: 5%;
+    top: 20%;
+    transition: 1s;
+}
+.picture div{
+    background: rgba(255, 255, 255, 0.72);
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    height: 20%;
+}
+.picture:hover a{
+    left: 15%;
+    color:green;
+}
+.picture::after{
+        content: "";           
+        display: block;           
+        height: 5px;       
+        width: 60%;         
+        background-color: #980961;  
+        margin: auto;
+        transition: 1s;
+}
+.picture:hover::after{ width: 90%}
+dfn{color: #e5ac44}
+strong{color: #ea7500; font-weigh:800}
+
+iframe{
+    width:75vw; 
+    height: 32vh;
+    border: 5px solid #dddddd;
+    border-radius: 3px;
+}
+#Tutorials li a{color: orange; font-size: 1.05rem}
+#Tutorials a{color: orange; font-size: 1.05rem}
+
+.gallery{width: 100vw; padding: 0 }
+.gallery .photos{width 98vw height: auto; padding: 1%; background: hsla(0, 1%, 21%, 0.46); border-radius: 5px; border: 10px solid black}
+.gallery .photos img{width:100%}
+.titgallery{margin: 3vh 32vw}
+video{display: none}
+
+@media(min-width:768px){
+    main{
+        width:90vw;
+        margin:0px 5vw;
+        padding: 1vh 1vw;
+    }
+    h3{
+        margin: 3vh 32vw;
+        padding: 3%;
+        width: 20vw;
+    }
+    .part{width: 80vw;margin:1vh 4vw 0}
+    .inline{width: 40vw; margin: 1vh 0 0; display: inline-block; vertical-align:text-top; height: 80vh;}
+    iframe{width: 38vw}
+    .picture{width:38vw; height:25vh}
+    .picture img{width:38vw; height:25vh}
+    .why{height: 134vh}
+    .threeD{height: 80vh}
+    .maya{height: 55vh}
+    .engine{height: 110vh}
+    .cry{ width:45vw; height: 125vh}
+    .cry .picture{width:43vw}
+    .cry .picture img{width:43vw}
+    .sculpt{height: 90vh}
+    .map{height: 60vh}
+    button{margin: 0 12vw 0 0}
+    nav{
+    width: 50vw;
+    position: fixed;
+    top: 14vh;
+    left: -52vw;
+}
+    .vis{ left: 0vw}
+    nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+    .title{ 
+        border-radius: 8px;
+        left:-1vw; position: relative; 
+        width: 92vw; 
+        height: 56vh; 
+        overflow: hidden;
+        margin: 5vh 0;
+    }
+    video{display: block; left: -1vw; position: relative; z-index: 1;}
+    .intro{width: 100vw; left:0; margin: 3vh 0 0 0}
+    .introvd{left:0;}
+    .color{position: absolute; top: 0; height: 100%; width: 100%; background:rgba(59, 50, 50, 0.26); z-index: 2; }
+    h1{font-size: 2.8rem; color: white; z-index: 3; top: 42%;  margin:0 12vw; position: absolute}
+    h2{ font-size: 2rem; position: absolute; top: 42%;  margin:0 5vw; z-index: 3}
+    h2::after{height: 10px} 
+    h2::before{height: 10px} 
+    .photo{left: 25%}
+    #Tutorials li{margin: 0 4vw}
+    .abils{margin:0 23vw;}
+    .links h1{margin:0 40vw}
+}
+
+
+
+
+@media(min-width:1024px){
+    .photo{left: 21.5%}
+    main{margin:0 3.2vw}
+    .intro{height: 65vh}
+    video{width: 100vw}
+    h1{font-size: 3.2rem; margin:0 23vw; top: 50%}
+    .title{height: 60vh}
+    .part{width:70vw; margin: 3vh 8vw;}
+    .part p{margin: 2vh 7vw}
+    .inline p{margin: 2vh 2vw}
+    .inline{margin: 3vh 0 0; width: 40vw}
+    h2{font-size: 2.7rem; margin:0 21vw;}
+    .abils{margin:0 26vw;}
+    .inline{height: 75vh}
+    .picture{width:38vw; height:38vh}
+    .picture img{width:38vw; height:38vh}
+    .cry{height: 120vh}
+    .cry .picture{width:38vw}
+    .cry .picture img{width:38vw}
+    .part h4{width: 50%; margin: 0vh 16vw}
+    .inline h4{margin: 0vh 9vw}
+    .sculpt{height: 80vh}
+    .map{height: 65vh}
+    .threeD{height: 75vh}
+    .why{height: 112vh}
+    .maya{height: 62vh}
+    .engine{height: 98vh}
+    .top_nav ul li a{font-size: 0.65rem}
+    h3{padding: 2%}
+    .picture a{font-size: 2rem}
+    #menu .average{font-size: 1rem;}
+}

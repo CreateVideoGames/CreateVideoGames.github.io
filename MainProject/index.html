@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Как создавать игры</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+  <header>
+   <nav class="top_nav">
+       <ul>
+         <button id="hide"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="36" height="32"  viewBox="0 0 36 32" fill="#e6e5e0">
+<path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+</svg></button>
+         <li><a href="index.html"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="36" height="32"   viewBox="0 0 36 32" fill="#fdb511">
+<path d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z"></path>
+</svg>Главная
+</a></li>
+          <li><a href="links/index.html"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="36" height="32"   viewBox="0 0 36 32" fill="#fdb511">
+<path d="M7 4h-6c-0.55 0-1 0.45-1 1v22c0 0.55 0.45 1 1 1h6c0.55 0 1-0.45 1-1v-22c0-0.55-0.45-1-1-1zM6 10h-4v-2h4v2z"></path>
+<path d="M17 4h-6c-0.55 0-1 0.45-1 1v22c0 0.55 0.45 1 1 1h6c0.55 0 1-0.45 1-1v-22c0-0.55-0.45-1-1-1zM16 10h-4v-2h4v2z"></path>
+<path d="M23.909 5.546l-5.358 2.7c-0.491 0.247-0.691 0.852-0.443 1.343l8.999 17.861c0.247 0.491 0.852 0.691 1.343 0.443l5.358-2.7c0.491-0.247 0.691-0.852 0.443-1.343l-8.999-17.861c-0.247-0.491-0.852-0.691-1.343-0.443z"></path>
+              </svg>Ссылки</a></li>
+           <li><a href="gallery/index.html"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="36" height="32"  viewBox="0 0 36 32" fill="#fdb511">
+<path d="M34 4h-2v-2c0-1.1-0.9-2-2-2h-28c-1.1 0-2 0.9-2 2v24c0 1.1 0.9 2 2 2h2v2c0 1.1 0.9 2 2 2h28c1.1 0 2-0.9 2-2v-24c0-1.1-0.9-2-2-2zM4 6v20h-1.996c-0.001-0.001-0.003-0.002-0.004-0.004v-23.993c0.001-0.001 0.002-0.003 0.004-0.004h27.993c0.001 0.001 0.003 0.002 0.004 0.004v1.996h-24c-1.1 0-2 0.9-2 2v0zM34 29.996c-0.001 0.001-0.002 0.003-0.004 0.004h-27.993c-0.001-0.001-0.003-0.002-0.004-0.004v-23.993c0.001-0.001 0.002-0.003 0.004-0.004h27.993c0.001 0.001 0.003 0.002 0.004 0.004v23.993z"></path>
+<path d="M30 11c0 1.657-1.343 3-3 3s-3-1.343-3-3 1.343-3 3-3 3 1.343 3 3z"></path>
+<path d="M32 28h-24v-4l7-12 8 10h2l7-6z"></path>
+</svg>Галерея</a></li>
+           <li><a href="aboutme/index.html"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="36" height="32"   viewBox="0 0 36 32" fill="#fdb511">
+<path d="M27 0h-24c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h24c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM26 28h-22v-24h22v24zM8 18h14v2h-14zM8 22h14v2h-14zM10 9c0-1.657 1.343-3 3-3s3 1.343 3 3c0 1.657-1.343 3-3 3s-3-1.343-3-3zM15 12h-4c-1.65 0-3 0.9-3 2v2h10v-2c0-1.1-1.35-2-3-2z"></path>
+</svg>Об авторе</a></li>
+       </ul>
+   </nav>
+   <nav id="menu">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="28"  viewBox="0 0 30 28" fill="#fdb511"></svg>
+       <ul>
+          <p>Содержание:</p>
+           <li><a class="big" href="#Why">Почему стоит заняться разработкой видеоигр?</a></li>
+           <li><a class="big" href="#Abilities">Какими качествами нужно обладать?</a></li>
+           <li><a class="big" href="#Programs">Какими программами нужно владеть для реализации своего проекта?</a></li>
+           <li><a class="average" href="#Concept-Art">Коцепт-арт</a></li>
+           <li><a class="average" href="#3d_models">3D Моделирование</a></li>
+           <li><a class="average" href="#sculpt">3D Скульптинг</a></li>
+           <li><a class="average" href="#Texture">Текстурирование</a></li>
+           <li><a class="average" href="#Maps">Запекание текстурных карт</a></li>
+           <li><a class="average" href="#Engine">Игровой Движок</a></li>
+           <li><a class="big" href="#Tutorials">Источники информации для изучения программ</a></li>
+           
+       </ul>
+   </nav>
+     <div class="title intro">
+         <div class="sizevideo"><video class="introvd" src="video/main.mp4" autoplay muted loop></video></div>
+     <div class="color"></div>
+      <h1 id="intro"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="36" height="32"  viewBox="0 0 36 32" fill="#fdb511"></svg>КАК САМОМУ СОЗДАВАТЬ ВИДЕОИГРЫ?</h1>
+      </div>
+    </header>
+    <main>
+       <article>
+       <div class="part">
+        <p>После нескольких часов прохождения любимой игры возможно у вас появлялось желание сделать свой собственный проект, который по уровню исполнения не уступал бы тому, что находился перед вами на экране монитора. Но мысли о том, что эту игру создавала большая студия и в нее было вложено огромное количество денег, отбивали всякое желание заниматься этим делом. Однако не стоит так быстро отказываться от такого амбициозного решения. В данной статье я расскажу вам, как можно у себя дома создать свою игру, а также отвечу на ряд важных вопросов, а именно:</p> 
+        <ul>
+          <li><strong>“Почему стоит заняться разработкой видеоигр?”</strong></li> 
+            <li><strong>“Какими качествами нужно обладать?”</strong></li>
+            <li><strong>“Какими программами нужно владеть для реализации своего проекта?”</strong></li> 
+            <li><strong>“Где можно найти видеокурсы и другие источники информации для изучения данных программ?”</strong></li>
+           </ul>
+           <p>Ну, что же, давайте начнем!</p>
+        </div>
+        </article>
+        <article id="Why">
+           <div class="title">
+           <video src="video/why.mp4" autoplay muted loop></video>
+           <div class="color"></div>
+            <h2>Почему стоит заняться разработкой видеоигр?</h2>
+            </div>
+            <div class="part">
+                <p>Многие из нас думают в будущем стать дизайнерами, программистами (например, в Yandex или Google).  Но ведь создание игр как раз и включает эти профессии. <strong>Так почему же большинство не решается заняться этим?</strong> <em>Создание игр— это творчество, приправленное глубокими знаниями программирования и создания 3D моделей.</em> В школах нам не дают достаточно знаний хотя бы для построения простого 3D объекта. Поэтому <strong>большинство инди-разработчиков изучали программы сами, методом проб и ошибок,</strong> а на это не каждый готов пойти, ведь для этого нужно много времени и терпения. Но результаты всех стараний просто поражают. И тут мы плавно переходим <strong>к плюсам создания игр:</strong></p>
+            </div>
+            <div class="part inline why">
+            <h4 id="income">Прибыль</h4>
+            <p>Хочется начать именно с этого, ведь одним из главных аргументов выбора той или иной профессии является зарплата.</p>
+                <p>Прибыль с создания игр зависит от множества вещей: <b>количество человек в вашей студии</b>, <b>уровень создаваемого вами проекта</b>, <b>платформа, на которую ориентирована ваша игра</b>. Поэтому достаточно сложно точно назвать определенную цифру. Давайте посмотрим на примеры:</p>
+                <p>Все вы знаете классную мобильную игру <dfn>Crossy Road</dfn></p>
+            <div class="picture">
+            <div><a href="https://play.google.com/store/apps/details?id=com.yodo1.crossyroad">Crossy Road</a></div>
+               <img src="./images/crossy-anh.jpg" alt="Crossy_Road">
+                </div>
+                <p><strong>(кстати, если Вы на этом сайте нажмете на название программы (игры), расположенное на картинке, то вы попадете на ее официальный сайт, где сможете всю интересующую Вас информацию =) )</strong></p>
+            <p><strong>Она принесла прибыль более $100000 своим разработчикам</strong> и на данный момент является одной из самых успешных игр, хотя она и не открывает каких-то новых стандартов в жанре. Сама игра бесплатная и все деньги идут с внутри игровых покупок и встроенной рекламы.</p>
+            <p>На данном примере можно понять, что <em>если ответственно отнестись к своему проекту, то даже самая простая игра для мобильных устройств может принести большие деньги.</em></p>
+                </div>
+                <div class="part inline why">
+                <h4 id="creativity">Творчество</h4>
+                <p>Процесс создания игры может показаться тяжелым и скучным, но это не так. <strong>Скучным его точно не назовешь!</strong> Каждый день вы создаете что-то новое: новую модель, персонажа, эффект или скрипт. Для решения каждой задачи (создание ИИ, правильная расстановка объектов на локации и т. п.) нужно прикладывать всё свое творчество. </p>
+                <p>Хочу показать вам один ролик, который, как мне кажется, полностью передает то настроение, в котором находятся люди, работая над своим проектом:</p>
+                    <iframe  src="https://www.youtube.com/embed/Wh50GoWOi14" frameborder="0" allowfullscreen></iframe>
+                <p>В этом видео показан процесс работы над проектом для IFCC 2017. IFCC - Независимый фестиваль творческой коммуникации. Основной целью данного мероприятия является общение и содействие художников и других авторов концепт-арта.</p>
+                </div>
+                <div class="part">
+                <h4 id="Popularity">Популярность</h4>
+                    <p>Популярность нельзя назвать главным аргументом разработки игр, так как ее очень трудно добиться. Однако, если создать качественный проект, который понравится тысячам людей, то о вашей студии заговорят. На вашу игру будут делать различные обзоры, которые будут привлекать новых покупателей. Затем вы можете создать свой <dfn>youtube канал</dfn>, где будете общаться со своей аудиторией, делиться новостями о ваших новых проектах и тем самым сумеете стать известными наравне с такими компаниями как <dfn>Gameloft</dfn> или даже <dfn>Crytek</dfn>.</p>
+            <p>Я рассказал лишь некоторые положительные стороны разработки видеоигр. Если после них вы заинтересовались этой сферой, то давайте рассмотрим следующий вопрос.</p>
+            </div>
+        </article>
+        
+        <article id="Abilities">
+        <div class="title">
+           <video src="video/abilities.mp4" autoplay muted loop></video>
+           <div class="color"></div>
+            <h2 class="abils">Какими качествами нужно обладать?</h2>
+            </div>
+        <div class="part">
+            <p>Если посмотреть на условия приема на работу в некоторых компаниях (например, <dfn>Remedy Entertainment</dfn>) то там будет указано: <strong><q>Любить игры. Быть активным и целеустремленным.</q></strong> Действительно, как можно создавать игры, но при этом не интересоваться ими? Также необходимо иметь <strong>целеустремленность</strong>, так как создание игры- процесс очень долгий и может растянуться даже на несколько лет! <strong>Важно уметь четко ставить перед собой цели и строго следовать им.</strong> </p>
+            <p><strong>Умение не стандартно мыслить</strong> одно из главных качеств для каждого разработчика игр, ведь ваш проект должен отличаться от сотен других, а для этого в нем должно быть то, что смогли придумать только вы, что-то необычное!</p>
+            <p>И конечно нужно <strong>уметь работать в команде</strong>! Без грамотно слаженной работы коллектива студия вряд ли сможет добиться успеха. </p>
+        <p>Далее мы переходим к главной части данной статьи, которая должна ответить на один из главных вопросов начинающих разработчиков. </p>
+            </div>
+        </article>
+        <article id="Programs">
+           <div class="title">
+           <video src="video/code.mp4" autoplay muted loop></video>
+           <div class="color"></div>
+            <h2>Какими программами нужно владеть для реализации своего проекта?</h2>
+            </div>
+            <div id="Concept-Art">
+                <h3>Концепт-арт</h3>
+                <div class="part">
+                    <p>Каждый большой проект начинается не с моделей и не с написания кода. <strong>Первым этапом является концепт-арт!</strong> И для его создания просто идеально подходит программа</p>
+                <h4 id="Adobe">ADOBE PHOTOSHOP CS6</h4>
+                <div class="picture photo">
+                <div><a href="http://www.adobe.com/ru/products/photoshop.html">ADOBE PHOTOSHOP</a></div><img src="./images/photoshop.jpg" alt="">
+                </div>
+                    <p><dfn>PHOTOSHOP CS6</dfn> очень мощный инструмент для создания артов любой сложности, также его применяют для создания и редактирования текстур (<dfn>Diffuse, Normal Map, Height Map UV Map</dfn> и т д)</p>
+                </div>
+            </div>
+            <div id="3d_models">
+                <h3>3D Моделирование</h3>
+                <div class="part">
+                <p>Затем по созданным концепт-артам создаются <dfn>3D модели</dfn>. В этом нам помогут программы </p>
+                </div>
+                <div class="part inline threeD">
+                <h4 id="3dsmax">3DS MAX</h4>
+                <div class="picture">
+                    <div><a href="https://www.autodesk.ru/products/3ds-max/overview">3DS MAX</a></div><img src="./images/3dsmax.jpg" alt="">
+                </div>
+                    <p><dfn>3DS MAX</dfn> можно назвать <strong>фундаментом 3D моделирования</strong>. Его используют практически все большие и малые студии по созданию не только игр, но и кино. В данной программе создаются все объекты, используемые в проекте, а именно: <b>все здания, элементы интерьера, персонажи, растительность, одежда</b> и тд. Так же программа обладает необходимыми функциями для <b>создания анимаций, редактирования материалов и текстур моделей</b>.</p>
+                <p>Но 3DS MAX не единственная программа в этой сфере. Примером этого является программа</p>
+                </div>
+                <div class="part inline threeD">
+                <h4 id="blender"> BLENDER </h4>
+                <div class="picture">
+                    <div><a href=" https://www.blender.org/">Blender</a></div>
+                <img src="./images/blender.jpg" alt="">
+                </div>
+                    <p><dfn>Blender</dfn> обладает схожими характеристиками, что и <dfn>3DS MAX</dfn>, но большинство пользователей полюбили его за <b>более интуитивно понятный интерфейс и более низкие системные требования</b>. Однако <dfn>Blender</dfn> <b>менее совместим с другими программами и обладает меньшим количеством плагинов</b>, что заставляет пользователей смотреть в сторону следующей программы</p>
+                </div>
+                <div class="part inline maya">
+                <h4 id="maya">MAYA</h4>
+                <div class="picture">
+                    <div><a href=" https://www.blender.org/">Maya</a></div><img src="./images/maya.jpg" alt="">
+                </div>
+                    <p><dfn>MAYA</dfn> похожа на <dfn>3DS MAX</dfn> (так как это продукты одной компании <dfn>Autodesk</dfn>), в ней есть все инструменты для создания моделей, но <b>главный упор сделан на создание качественной анимации.</b></p>
+                </div>
+                <div class="part inline maya">
+                    <p id="skelet"> К <dfn>Maya</dfn> существует множество плагинов, позволяющих <em>ускорять процесс создания скелета персонажа и его последующей анимации</em></p>
+                    <p>Особенно хочется отметить <dfn>плагин AdvancedSkeleton</dfn></p>
+                <div class="picture">
+                    <div><a href="http://www.animationstudios.com.au/advanced-skeleton">Advanced Skeleton</a></div><img src="./images/skeleton.jpg" alt="">
+                </div>
+                </div>
+            </div>
+            <div id="Sculpting">
+               <h3 id="sculpt">3D Скульптинг</h3>
+               <div class="part inline sculpt">
+               <h4 id="zbrush">ZBRUSH</h4>
+               <div class="picture">
+                    <div><a href="http://pixologic.com/zbrush/features/ZBrush4R7/">Zbrush</a></div><img src="./images/Zbrush.jpg" alt="">
+                </div>
+                   <p>Все предыдущие программы позволяли создавать <em>модели с низкой и средней детализацией</em>. Конечно можно попробовать построить <strong>высоко полигональную модель</strong> в том же <dfn>3DS MAX</dfn>, но на это уйдет много времени и сил. Для этого есть специальная программа <dfn>ZBRUSH</dfn>, позволяющая работать с объектами, состоящими из <strong>более чем 1 млн полигонов, при этом не нагружая систему!</strong> Эта программа просто <b>незаменима для создания персонажей, одежды, растений и животных.</b> Также она используется при создании <dfn>Normal Map, Diffuse и других текстурных карт. ZBRUSH</dfn> применяется множеством студий, такими как <dfn>Ubisoft, Naughty Dog, CD Project Red</dfn> и другими.</p>
+                </div>
+                <div class="part inline sculpt">
+                <h4>Autodesk Mudbox</h4>
+                <div class="picture">
+                    <div><a href="https://www.autodesk.com/products/mudbox/overview">Mudbox</a></div><img src="./images/Mudbox.jpg" alt="">
+                </div>
+                    <p>Данная программа обладает схожим функционалом с <dfn>ZBRUSH</dfn>, однако в ней <strong>более тонкая настройка ретопологии модели и более удобная связь с другими продуктами от Autodesk.</strong> Но все же я рекомендую использовать <dfn>ZBRUSH</dfn>, так как в нем значительно больше функций для скульптинга.</p>
+            </div>
+            </div>
+            <div id="Texture">
+                <h3>Текстурирование </h3>
+                <div class="part">
+                    <p>Текстурирование является одним из главных аспектов создания качественной 3D модели. Главной программой для данного этапа я все также выделяю <dfn>ADOBE PHOTOSHOP CS6</dfn>. Но функции текстурирования есть и в <dfn>ZBRUSH</dfn>, и в <dfn>Mudbox</dfn>. И в принципе любая из этих программ может вам подойти. <em> Кстати, даже простой Paint может подойти для редактирования текстурных карт (хоть это и будет довольно необычно)</em> =)</p>
+            </div>
+            </div>
+            <div id="Maps">
+            <h3>Запекание текстурных карт </h3>
+            <div class="part">
+            <p>Данная процедура необходима для создания (или "запекания") текстурных карт (проще говоря, вся информация о текстуре модели записывается в одном файле как 2D изображение)</p>
+                </div>
+            <div class="part inline map">
+            <h4 id="xnormal">XNormal</h4>
+               <div class="picture">
+                    <div><a href="http://www.xnormal.net/">XNormal</a></div><img src="./images/xnormal.jpg" alt="">
+                </div>
+                <p><dfn>XNormal</dfn> является основной программой для запекания текстурных карт. Вы берете высокополигональную модель, сделанную в <dfn>Zbrush</dfn> (или в другой программе для скульптинга), запекаете с нее карты (<dfn>Normal, Diffuse</dfn> и т д), а затем применяете ее для низкополигональной модели.</p>
+                </div>
+            <div class="part inline map">
+            <h4 id="crazybump">CrazyBump</h4>
+            <div class="picture">
+                    <div><a href="http://www.crazybump.com/">CrazyBump</a></div><img src="./images/crazybump.jpeg" alt="">
+                </div>
+                <p>Это довольно простая программа для создания текстурных карт. Берете обыную фотографию и <dfn>CrazyBump</dfn> на ее основе создает <dfn>Normal Map</dfn> и <dfn>Height Map</dfn>. Имеет ряд гибких настроек. <em>Она скорее полезна для маленьких и незначительных моделей, чем для главных персонажей и т д.</em></p>
+            </div>
+            </div>
+            <div id="Engine">
+                <h3>Игровой Движок</h3>
+                <div class="part">
+                    <p>Итак, мы перешли к теме, которая <strong>может кардинально повлиять на судьбу вашего проекта</strong>. Ведь именно <dfn>Игровой движок</dfn> заставляет саму игру работать. От выбора движка зависит то, как будет выглядеть ваш проект. Именно от мощностей игрового движка приходится отталкиваться при создании игры. Поэтому перед таким серьезным выбором , необходимо ответить самому себе на несколько вопросов:</p>
+                <ul>
+                    <li><strong>На какую платформу рассчитана ваша игра?</strong> (мобильные устройства, персональные компьютеры, игровые консоли, какая операционная система)</li>
+                    <li><strong>Каков масштаб вашего проекта?</strong>(игра ААА класса, B класса, инди-игра и т. д.)</li>
+                    <li><strong>Насколько сложна реализация проекта, какие аспекты игры вы хотите выделить?</strong> (продвинутое освещение, реалистичная физика, искусственный интеллект и т д)</li>
+                </ul>
+                <p>Когда вы четко расставили приоритеты, настало время для выбора игрового движка</p>
+                </div>
+                <div class="part inline engine">
+                <h4 id="unity">Unity</h4>
+                <div class="picture">
+                    <div><a href="https://unity3d.com/ru/">Unity</a></div><img src="./images/Unity5.jpg" alt="">
+                </div>
+                    <p>Очень популярный игровой движок, <strong>преимущественно используется для создания мобильных игр для IOS и Android.</strong> <dfn>Unity</dfn> обладает очень богатым функционалом, а именно: <b>создание ландшафта, настройка материалов, создание скриптов на JavaScript и C#, редактирование анимаций и так далее.</b> У этого движка <em>очень большое сообщество</em>, поэтому узнать какую-либо информацию по Unity не составит особого труда. Из минусов хотелось бы отметить слишком простой редактор материалов по сравнению с другими движками, да и в целом это можно сказать обо всем <dfn>Unity</dfn>. <strong>Он не особо пригоден для создания AAA игры по типу Battlefield или Crysis. А для реализации небольших проектов он будет в самый раз.</strong></p>
+                </div>
+                <div class="part inline engine">
+                <h4 id="ue4">Unreal Engine 4</h4>
+                <div class="picture">
+                    <div><a href="https://www.unrealengine.com/what-is-unreal-engine-4">Unreal Engine 4</a></div><img src="./images/ue4.jpg" alt="">
+                </div>
+                    <p>Движок, не побоюсь этого слова, <strong>профессионального уровня. Преимущественно используется для создания AAA проектов</strong>,таких как: <dfn>Tekken 7, Gears of War 4, Paragon.</dfn> Сегодня мощности данного движка стали применяться и в кинематографе. <dfn>UE4</dfn> обладает множеством положительных сторон:  <b>продвинутый редактор материалов, редактор анимаций, скриптинг на C++, а так же система визуального скриптинга Blueprint, позволяющая без использования кода C++ создавать скрипты.</b> Пригоден для создания не только компьютерных, но и мобильных игр. Движок продолжает набирать популярность, но может отпугнуть своей сложностью. Да, <strong>он гораздо сложнее чем Unity, однако его контент в сотни раз лучше по качеству и гораздо комплекснее.</strong> Рекомендую его тем, кто уже давно находится в геймдеве и хочет открыть для себя новые возможности. А новичкам советую побыть некоторое время на Unity и познать в нем самые озы создания игр. </p>
+                </div>
+                <div class="part inline cry">
+                <h4 id="cryengine">CRYENGINE</h4>
+                <div class="picture">
+                    <div><a href="https://www.cryengine.com/">CRYENGINE</a></div><img src="./images/Cryengine.jpg" alt="">
+                </div>
+                    <p>Я не мог не упомянуть здесь данный движок. С ним у меня связано мое знакомство с геймдевом, благодаря ему я узнал, что игры можно создавать даже у себя дома! Очень много воспоминаний о нем, но к сожалению, я не могу его вам рекомендовать. Да, <strong>это движок AAA класса</strong>, на нем сделаны такие игры, как: <dfn>Crysis 1-3, Ryse: Son of Rome, Prey</dfn>. <strong>Движок способен выдавать картинку практически не отличимую от жизни.</strong> <b>В нем также присутствует редактор материалов высокого уровня, редактор анимаций, хочется отметить редактор воды,  и очень крутую настройку Skybox. Как и у UE4 присутствует визуальный скриптинг.</b> Но есть ряд минусов. Один из них- это его <strong>нестабильность</strong>. Ваш проект может сломаться практически на пустом месте, и вы не сможете вернуть его назад (было множество случаев, не только у меня) <strong>Редактор материалов не так интуитивно понятен</strong>, как в том же UE4. Трудности могут возникнуть с использованием 3D моделей, так как <strong>стандартный формат FBX он не принимает</strong>. К минусам можно добавить то, что <strong>сообщество значительно меньше чем у UE4 или Unity, поэтому достать какую-то нужную информацию в русском сегменте вряд ли получится.</strong> Я не говорю, что это плохой движок. С той картинкой, которую он выдает, просто грех жаловаться. Я просто предупреждаю, что возможны некоторые серьезные трудности в процессе обучения.</p>
+            </div>
+            </div>
+        </article>
+        <article id="Tutorials">
+           <div class="title">
+           <video src="video/code.mp4" autoplay muted loop></video>
+           <div class="color"></div>
+            <h2>Где можно найти видеокурсы и другие источники информации для изучения данных программ?</h2>
+            </div>
+            <div class="part">
+            <p>Итак, мы узнали программы, которые нам понадобятся для разработки, но возникает вопрос, где найти информацию о них. Здесь я расположу ссылки на различную документацию, youtube каналы и видеокурсы для данных программ.</p>
+            <p>В первую очередь для создания любой игры необходимо изучить языки программирования, поэтому я рекомендую воспользоваться курсами Школы Программистов:  <a href="https://my.informatics.ru/"> my.informatics.ru </a>  Здесь вас научат писать код на C++, Вы узнаете устройство операционных систем, процесс создания сайтов и множество других полезных вещей, необходимых для реализации своего проекта.</p>
+            <p>Для хорошего владения фотошопом советую посмотреть видеоуроки на данном канале:</p>
+            <li><a href="https://www.youtube.com/channel/UCL9hdLBGz9BKnX73VsRE_1w">www.youtube.com/channel/<wbr>UCL9hdLBGz9BK<wbr>nX73VsRE_1w</a></li>
+            <p>В интернете полно различных курсов по 3ds max, но сильнее всего я хочу отметить данные каналы:</p>
+            <li><a href="https://www.youtube.com/channel/UCCWgQ5rHNT6KnBbzCRhpixg ">www.youtube.com/channel/<wbr>UCCWgQ5rHNT6K<wbr>nBbzCRhpixg </a></li>
+            <li><a href="https://www.youtube.com/channel/UCdnEp28OoU-k4sfvI3X_hgg">www.youtube.com/channel/<wbr>UCdnEp28OoU-k4s<wbr>fvI3X_hgg</a></li>
+            <li><a href="https://www.youtube.com/user/khproton">www.youtube.com/<wbr>user/khproton</a></li>
+            <p>Уроки по Maya вы можете найти здесь:</p>
+            <li><a href="https://www.youtube.com/channel/UCWmepEmxTGulVZuWUZ_FTmw">www.youtube.com/channel/<wbr>UCWmepEmxTGul<wbr>VZuWUZ_FTmw</a></li>
+            <li><a href="https://www.youtube.com/channel/UCmbQSmyDn1wSyEmeFBlz4ew">www.youtube.com/channel/<wbr>UCmbQSmyDn<wbr>1wSyEmeFBlz4ew</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLfwRRG_Gn2RD9TSfdYBSAgfD6-0lZAa12">www.youtube.com/playlist?<wbr>list=PLfwRRG_Gn2RD9TSfd<wbr>YBSAgfD6-0lZAa12</a></li>
+            <p>Даже для модификатора Advanced Skeleton есть отдельный канал, где автор на примерах показывает его функции</p>
+            <li><a href="https://www.youtube.com/user/AdvancedSkeleton ">www.youtube.com/<wbr>user/<wbr>AdvancedSkeleton </a></li>
+            <p>Рекомендую канал, в котором очень подробно описываются функции программы Blender</p>
+            <li><a href="https://www.youtube.com/channel/UCLYrT1051M_6XkbEc5Te8PA">www.youtube.com<wbr>/channel/<wbr>UCLYrT1051M_6X<wbr>kbEc5Te8PA</a></li>
+            <p>Уроки по Zbrush:</p>
+            <li><a href="https://www.youtube.com/playlist?list=PLuMRt1Yd3v4cJS6smxMQ1e6ELmlGrr8Fn ">www.youtube.com/<wbr>playlist?<wbr>list=PLuMRt1Yd3v4cJS6s<wbr>mxMQ1e6ELmlGrr8Fn </a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLfFOkxei0ufiwrjztPwXJxgmPrlWSKD-m ">www.youtube.com/<wbr>playlist?<wbr>list=PLfFOkxei0uf<wbr>iwrjztPwXJxgmPrlWSKD-m </a></li>
+            <li><a href="https://www.youtube.com/channel/UCEh_IoMVGA7NPsx6-2H8Bqw">www.youtube.com/<wbr>channel/<wbr>UCEh_IoMVGA7NPsx6-2H8Bqw</a></li>
+            <p>Mudbox:</p>
+            <li><a href="https://www.youtube.com/channel/UCVyaOFs4_-xYKAZpx1Iegww ">www.youtube.com<wbr>/channel/<wbr>UCVyaOFs4_-xYKAZpx1Iegww </a></li>
+            <p>Для изучения движка Unity очень советую сайт: 
+            <a href="http://unity3dschool.ru/">unity3dschool.ru </a> (по моему мнению это самый качественный сайт, в котором авторы рассматривают не только создание проекта, написание кода на C#, но и монетизацию и публикацию ваших проектов!)
+            </p>
+            <p>Самый качественный русскоязычный канал об Unreal Engine 4:</p>
+            <li><a href="https://www.youtube.com/channel/UCLbkGIcYJxxL0tciH9RVebg ">https://www.youtube.com<wbr>/channel/<wbr>UCLbkGIcYJxxL0tciH9RVebg </a></li>
+            <p>у них есть группа Вконтакте, где вы можете задавать абсолютно любые вопросы о движке: <a href="https://vk.com/uengine">vk.com/uengine</a></p>
+            <p>так же советую  канал <a href="https://www.youtube.com/channel/UCX9Dv2nQFlznRgbsB3R9gDg">https://www.youtube.com<wbr>/channel/<wbr>UCX9Dv2nQFl<wbr>znRgbsB3R9gDg</a></p>
+            <p>По Cryengine не так много хороших каналов, но лучшими хочется выделить:</p>
+            <li><a href="https://www.youtube.com/user/CryDevPortal">https://www.youtube.com<wbr>/user<wbr>/CryDev<wbr>Portal</a></li>
+            <li><a href="https://www.youtube.com/channel/UCIPT8x3S7OzcySqlS5_7UGQ">https://www.youtube.com<wbr>/channel/<wbr>UCIPT8x3S7OzcySqlS5_7UGQ</a></li>
+            <li><a href="https://www.youtube.com/channel/UCIPT8x3S7OzcySqlS5_7UGQ">https://www.youtube.com<wbr>/channel/<wbr>UCIPT8x3S7OzcySqlS5_7UGQ</a></li>
+            </div>
+        </article>
+    </main>
+    
+    <script>
+    hide.addEventListener('click',function(){
+        menu.classList.toggle('vis');
+    });
+    </script>
+</body>
+</html>
