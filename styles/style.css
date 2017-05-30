@@ -71,13 +71,14 @@ nav{
     border-right: 6px solid #fdb511;
 }
 nav ul{border-left:none}
-#menu ul li {margin: 0 0 2vh 0}
+#menu ul li {margin: 0 0 2vh 0;}
 #menu .big{ color: #d4d3d0; font-weight:800; text-decoration: underline}
-#menu .average{ color: orange; font-size:0.7rem; margin:0 0 0 6vw }
+#menu .average{display: none; color: orange; font-size:0.9rem; margin:0 0 0 6vw; line-height:1vh;}
+.aver{display: none}
 nav ul li a{
     color: white;
     text-decoration: none;
-    font-size: 1.05rem;
+    font-size: 1.03rem;
 }
 nav ul li a:active{background:#fdb511}
 .vis{ left: -5vw}
@@ -156,7 +157,7 @@ h4{
 }
 .picture:hover::after{ width: 90%}
 dfn{color: #e5ac44}
-strong{color: #ea7500; font-weigh:800}
+strong{color: #ea7500; font-weight:800}
 
 iframe{
     width:75vw; 
@@ -164,8 +165,8 @@ iframe{
     border: 5px solid #dddddd;
     border-radius: 3px;
 }
-#Tutorials li a{color: orange; font-size: 1.05rem}
-#Tutorials a{color: orange; font-size: 1.05rem}
+#Tutorials li a{color: orange; font-size: 1.01rem}
+#Tutorials a{color: orange; font-size: 1.01rem}
 
 .gallery{width: 100vw; padding: 0 }
 .gallery .photos{width 98vw height: auto; padding: 1%; background: hsla(0, 1%, 21%, 0.46); border-radius: 5px; border: 10px solid black}
@@ -189,15 +190,15 @@ video{display: none}
     iframe{width: 38vw}
     .picture{width:38vw; height:25vh}
     .picture img{width:38vw; height:25vh}
-    .why{height: 134vh}
-    .threeD{height: 80vh}
+    .why{height: 147vh}
+    .threeD{height: 96vh}
     .maya{height: 55vh}
-    .engine{height: 110vh}
-    .cry{ width:45vw; height: 125vh}
+    .engine{height: 119vh}
+    .cry{ width:45vw; height: 134vh}
     .cry .picture{width:43vw}
     .cry .picture img{width:43vw}
-    .sculpt{height: 90vh}
-    .map{height: 60vh}
+    .sculpt{height: 98vh}
+    .map{height: 66vh}
     button{margin: 0 12vw 0 0}
     nav{
     width: 50vw;
@@ -231,6 +232,8 @@ video{display: none}
     #Tutorials li{margin: 0 4vw}
     .abils{margin:0 23vw;}
     .links h1{margin:0 40vw}
+    #menu .average{display: block}
+    .aver{display: block}
 }
 
 
