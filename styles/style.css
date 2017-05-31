@@ -226,7 +226,7 @@ video{display: none}
     .color{position: absolute; top: 0; height: 100%; width: 100%; background:rgba(59, 50, 50, 0.26); z-index: 2; }
     h1{font-size: 2.8rem; color: white; z-index: 3; top: 42%;  margin:0 12vw; position: absolute}
     h2{ font-size: 2rem; position: absolute; top: 42%;  margin:0 5vw; z-index: 3}
-    .alone{top: 35%}
+    .alone{top: 32%; line-height: 2.2rem; font-size: 1.8rem}
     h2::after{height: 10px} 
     h2::before{height: 10px} 
     .photo{left: 25%}
@@ -312,6 +312,7 @@ video{display: none}
 }
 
 @media(min-width:1440px){
+    .alone{top: 36%; line-height: 3.5rem; font-size: 2rem}
     .engine{height: 57vw}
     .maya{height: 38vw}
     .why{height: 71vw}
