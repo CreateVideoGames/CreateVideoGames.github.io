@@ -190,15 +190,15 @@ video{display: none}
     iframe{width: 38vw}
     .picture{width:38vw; height:25vh}
     .picture img{width:38vw; height:25vh}
-    .why{height: 147vh}
-    .threeD{height: 96vh}
-    .maya{height: 55vh}
-    .engine{height: 119vh}
-    .cry{ width:45vw; height: 134vh}
+    .why{height: 145vw}
+    .threeD{height: 95vw}
+    .maya{height: 60vw}
+    .engine{height: 125vw}
+    .cry{ width:45vw; height: 150vw}
     .cry .picture{width:43vw}
     .cry .picture img{width:43vw}
-    .sculpt{height: 98vh}
-    .map{height: 66vh}
+    .sculpt{height: 99vw}
+    .map{height: 70vw}
     button{margin: 0 12vw 0 0}
     nav{
     width: 50vw;
@@ -216,7 +216,7 @@ video{display: none}
         border-radius: 8px;
         left:-1vw; position: relative; 
         width: 92vw; 
-        height: 56vh; 
+        height: 54vw; 
         overflow: hidden;
         margin: 5vh 0;
     }
@@ -236,7 +236,15 @@ video{display: none}
     .aver{display: block}
 }
 
-
+@media(min-width:900px){
+    .engine{height: 97vw}
+    .maya{height: 58vw}
+    .why{height: 120vw}
+    .threeD{height: 80vw}
+    .sculpt{height: 80vw}
+    .cry{height: 115vw}
+    .map{height: 63vw}
+}
 
 
 @media(min-width:1024px){
@@ -255,19 +263,37 @@ video{display: none}
     .inline{height: 75vh}
     .picture{width:38vw; height:38vh}
     .picture img{width:38vw; height:38vh}
-    .cry{height: 120vh}
+    .cry{height: 125vw}
     .cry .picture{width:38vw}
     .cry .picture img{width:38vw}
     .part h4{width: 50%; margin: 0vh 16vw}
     .inline h4{margin: 0vh 9vw}
-    .sculpt{height: 80vh}
-    .map{height: 65vh}
-    .threeD{height: 75vh}
-    .why{height: 112vh}
-    .maya{height: 62vh}
-    .engine{height: 98vh}
+    .sculpt{height: 80vw}
+    .map{height: 63vw}
+    .threeD{height: 81vw}
+    .why{height: 115vw}
+    .maya{height: 58vw}
+    .engine{height: 97vw}
     .top_nav ul li a{font-size: 0.65rem}
     h3{padding: 2%}
     .picture a{font-size: 2rem}
     #menu .average{font-size: 1rem;}
+}
+@media(min-width:1440px){
+    .engine{height: 57vw}
+    .maya{height: 38vw}
+    .why{height: 69vw}
+    .threeD{height: 50vw}
+    .sculpt{height: 50vw}
+    .cry{height: 65vw}
+    .map{height: 43vw}
+}
+@media(min-width:1920px){
+    .cry{height: 45vw}
+    .engine{height: 40vw}
+    .map{height: 33vw}
+    .sculpt{height: 36vw}
+    .maya{height: 30vw}
+    .threeD{height: 37vw}
+    .why{height: 50vw}
 }
