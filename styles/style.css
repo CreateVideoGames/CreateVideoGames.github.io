@@ -226,6 +226,7 @@ video{display: none}
     .color{position: absolute; top: 0; height: 100%; width: 100%; background:rgba(59, 50, 50, 0.26); z-index: 2; }
     h1{font-size: 2.8rem; color: white; z-index: 3; top: 42%;  margin:0 12vw; position: absolute}
     h2{ font-size: 2rem; position: absolute; top: 42%;  margin:0 5vw; z-index: 3}
+    .alone{top: 35%}
     h2::after{height: 10px} 
     h2::before{height: 10px} 
     .photo{left: 25%}
